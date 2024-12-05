@@ -12,29 +12,31 @@
         <meta name="author" content="Dunamis">
       
       
-        <link rel="canonical" href="https://nexios.example.com/index.html">
+        <link rel="canonical" href="https://nexios.example.com/guides/nexio-request.html">
       
       
+        <link rel="prev" href="routing.html">
       
-        <link rel="next" href="introduction.html">
+      
+        <link rel="next" href="../core-features/request-object.html">
       
       
-        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="feed_rss_created.xml">
-        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="feed_rss_updated.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed" href="../feed_rss_created.xml">
+        <link rel="alternate" type="application/rss+xml" title="RSS feed of updated content" href="../feed_rss_updated.xml">
       
-      <link rel="icon" href="logo.svg">
+      <link rel="icon" href="../logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
     
     
       
-        <title>Nexios</title>
+        <title>Nexio request - Nexios</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6f8fc17f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -55,7 +57,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -83,7 +85,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nexios-documentation" class="md-skip">
+        <a href="#nexio-request-object" class="md-skip">
           Skip to content
         </a>
       
@@ -101,9 +103,9 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Nexios" class="md-header__button md-logo" aria-label="Nexios" data-md-component="logo">
+    <a href="../index.html" title="Nexios" class="md-header__button md-logo" aria-label="Nexios" data-md-component="logo">
       
-  <img src="logo.svg" alt="logo">
+  <img src="../logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -120,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Nexio request
             
           </span>
         </div>
@@ -184,11 +186,9 @@
         
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="index.html" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
         
   
     
@@ -207,7 +207,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="introduction.html" class="md-tabs__link">
+        <a href="../introduction.html" class="md-tabs__link">
           
   
   Getting Started
@@ -221,11 +221,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="guides/routing.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="routing.html" class="md-tabs__link">
           
   
   Guide
@@ -243,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="core-features/request-object.html" class="md-tabs__link">
+        <a href="../core-features/request-object.html" class="md-tabs__link">
           
   
   Core Features
@@ -261,7 +263,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="integrations/tortoise-orm.md" class="md-tabs__link">
+        <a href="../integrations/tortoise-orm.md" class="md-tabs__link">
           
   
   Integrations
@@ -279,7 +281,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="tutorials/basic-app.md" class="md-tabs__link">
+        <a href="../tutorials/basic-app.md" class="md-tabs__link">
           
   
   Tutorials
@@ -297,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="api-reference/nexios.md" class="md-tabs__link">
+        <a href="../api-reference/nexios.md" class="md-tabs__link">
           
   
   API Reference
@@ -315,7 +317,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="advanced/custom-middleware.md" class="md-tabs__link">
+        <a href="../advanced/custom-middleware.md" class="md-tabs__link">
           
   
   Advanced Guides
@@ -348,9 +350,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Nexios" class="md-nav__button md-logo" aria-label="Nexios" data-md-component="logo">
+    <a href="../index.html" title="Nexios" class="md-nav__button md-logo" aria-label="Nexios" data-md-component="logo">
       
-  <img src="logo.svg" alt="logo">
+  <img src="../logo.svg" alt="logo">
 
     </a>
     Nexios
@@ -374,30 +376,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -406,146 +388,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
-    <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Installation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-hello-world-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Hello World Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Routing
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Routing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-decorators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Decorators:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-routers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Routers:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Middleware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-asynchronous-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Asynchronous Support
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-websocket-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. WebSocket Support
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-session-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Session Management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conclusion
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -597,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="introduction.html" class="md-nav__link">
+      <a href="../introduction.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -618,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="installation.html" class="md-nav__link">
+      <a href="../installation.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -639,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hello_world.html" class="md-nav__link">
+      <a href="../hello_world.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -660,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="basic_routing.html" class="md-nav__link">
+      <a href="../basic_routing.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -685,25 +527,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -714,7 +561,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Guide
@@ -728,7 +575,7 @@
   
   
     <li class="md-nav__item">
-      <a href="guides/routing.html" class="md-nav__link">
+      <a href="routing.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -746,10 +593,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="guides/nexio-request.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Nexio request
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="nexio-request.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -758,6 +623,132 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nexio-request-object" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nexio Request object
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#route_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      .route_params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cookies" class="md-nav__link">
+    <span class="md-ellipsis">
+      .cookies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      .headers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      .content-type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client" class="md-nav__link">
+    <span class="md-ellipsis">
+      .client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      .query_params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base_url" class="md-nav__link">
+    <span class="md-ellipsis">
+      .base_url
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      .body()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      .json()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      .form_data()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      .stream()
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -817,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/request-object.html" class="md-nav__link">
+      <a href="../core-features/request-object.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -838,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/response-object.md" class="md-nav__link">
+      <a href="../core-features/response-object.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -859,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/middleware.md" class="md-nav__link">
+      <a href="../core-features/middleware.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -880,7 +871,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/router.md" class="md-nav__link">
+      <a href="../core-features/router.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -901,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/routing.md" class="md-nav__link">
+      <a href="../core-features/routing.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -922,7 +913,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/websocket.md" class="md-nav__link">
+      <a href="../core-features/websocket.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -943,7 +934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/session-manager.md" class="md-nav__link">
+      <a href="../core-features/session-manager.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -964,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="core-features/validators.md" class="md-nav__link">
+      <a href="../core-features/validators.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1032,7 +1023,7 @@
   
   
     <li class="md-nav__item">
-      <a href="integrations/tortoise-orm.md" class="md-nav__link">
+      <a href="../integrations/tortoise-orm.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1053,7 +1044,7 @@
   
   
     <li class="md-nav__item">
-      <a href="integrations/redis.md" class="md-nav__link">
+      <a href="../integrations/redis.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1074,7 +1065,7 @@
   
   
     <li class="md-nav__item">
-      <a href="integrations/celery.md" class="md-nav__link">
+      <a href="../integrations/celery.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1142,7 +1133,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/basic-app.md" class="md-nav__link">
+      <a href="../tutorials/basic-app.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1163,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/realtime-chat.md" class="md-nav__link">
+      <a href="../tutorials/realtime-chat.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1184,7 +1175,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/rest-api.md" class="md-nav__link">
+      <a href="../tutorials/rest-api.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1205,7 +1196,7 @@
   
   
     <li class="md-nav__item">
-      <a href="tutorials/authentication.md" class="md-nav__link">
+      <a href="../tutorials/authentication.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1273,7 +1264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api-reference/nexios.md" class="md-nav__link">
+      <a href="../api-reference/nexios.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1294,7 +1285,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api-reference/middleware.md" class="md-nav__link">
+      <a href="../api-reference/middleware.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1315,7 +1306,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api-reference/router.md" class="md-nav__link">
+      <a href="../api-reference/router.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1336,7 +1327,7 @@
   
   
     <li class="md-nav__item">
-      <a href="api-reference/validators.md" class="md-nav__link">
+      <a href="../api-reference/validators.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1404,7 +1395,7 @@
   
   
     <li class="md-nav__item">
-      <a href="advanced/custom-middleware.md" class="md-nav__link">
+      <a href="../advanced/custom-middleware.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1425,7 +1416,7 @@
   
   
     <li class="md-nav__item">
-      <a href="advanced/extending-router.md" class="md-nav__link">
+      <a href="../advanced/extending-router.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1446,7 +1437,7 @@
   
   
     <li class="md-nav__item">
-      <a href="advanced/custom-validators.md" class="md-nav__link">
+      <a href="../advanced/custom-validators.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1484,8 +1475,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1494,120 +1483,108 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#nexio-request-object" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction
+      Nexio Request object
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#route_params" class="md-nav__link">
     <span class="md-ellipsis">
-      Features
+      .route_params
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Features">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-installation" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Installation
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-hello-world-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Hello World Example
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-routing" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Routing
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Routing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#using-decorators" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Decorators:
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-routers" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using Routers:
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-middleware" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Middleware
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#5-asynchronous-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Asynchronous Support
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6-websocket-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      6. WebSocket Support
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#7-session-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      7. Session Management
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conclusion" class="md-nav__link">
+  <a href="#cookies" class="md-nav__link">
     <span class="md-ellipsis">
-      Conclusion
+      .cookies
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      .headers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#content-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      .content-type
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#client" class="md-nav__link">
+    <span class="md-ellipsis">
+      .client
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#query_params" class="md-nav__link">
+    <span class="md-ellipsis">
+      .query_params
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base_url" class="md-nav__link">
+    <span class="md-ellipsis">
+      .base_url
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    <span class="md-ellipsis">
+      .body()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json" class="md-nav__link">
+    <span class="md-ellipsis">
+      .json()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#form_data" class="md-nav__link">
+    <span class="md-ellipsis">
+      .form_data()
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stream" class="md-nav__link">
+    <span class="md-ellipsis">
+      .stream()
     </span>
   </a>
   
@@ -1631,110 +1608,107 @@
   
 
 
-<p>Here's an introductory markdown documentation for Nexios based on your questions and answers:</p>
-<hr />
-<h1 id="nexios-documentation">Nexios Documentation</h1>
-<p><a href="https://github.com/techwithdunamix/nexios"><img alt="GitHub stars" src="https://img.shields.io/github/stars/techwithdunamix/nexios.svg?style=social" /></a>
-<a href="https://github.com/techwithdunamix/nexios"><img alt="GitHub forks" src="https://img.shields.io/github/forks/techwithdunamix/nexios.svg?style=social" /></a>
-<a href="https://github.com/techwithdunamix/nexios/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/techwithdunamix/nexios.svg" /></a></p>
-<h2 id="introduction">Introduction</h2>
-<p>Nexios is a Python-based ASGI backend framework designed to provide flexibility, speed, and utility for building asynchronous web applications. It mimics the structure of Express.js, making it easy for developers familiar with JavaScript and Node.js to transition to Python. Nexios is designed with both Object-Oriented Programming (OOP) and Functional Programming (FP) principles, giving developers the choice to approach their code in the way that suits them best.</p>
-<p>Nexios provides built-in utilities like middleware support, routing, session management, WebSocket handling, and asynchronous operations, making it a perfect fit for modern, fast-paced backend development. It also comes with automatic support for Tortoise ORM, making it easier to interact with databases in a non-blocking way.</p>
-<h2 id="features">Features</h2>
-<h3 id="1-installation">1. <strong>Installation</strong></h3>
-<p>To get started with Nexios, follow these steps:</p>
-<ol>
-<li>
-<p><strong>Create a new project directory</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>your_project_name
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>your_project_name
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Set up a virtual environment</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Activate the virtual environment</strong>:</p>
-</li>
-<li>On Windows:
-     <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
-</code></pre></div></li>
-<li>
-<p>On Linux/Mac:
-     <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">source</span><span class="w"> </span>venv/bin/activate
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Install Nexios</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>pip<span class="w"> </span>install<span class="w"> </span>nexios
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Verify the installation</strong>:
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>-m<span class="w"> </span>nexios
-</code></pre></div></p>
-</li>
-</ol>
-<p>You should see the following output, confirming the installation:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>    🚀 Welcome to Nexios 🚀
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>      The sleek ASGI Backend Framework
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>      Version: X.X.X
-</code></pre></div></p>
-<h3 id="2-hello-world-example">2. <strong>Hello World Example</strong></h3>
-<p>Create a simple "Hello World" application using Nexios:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span> <span class="nn">nexios</span> <span class="kn">import</span> <span class="n">NexioApp</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">NexioApp</span><span class="p">()</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/api/endpoint&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;GET&quot;</span><span class="p">])</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">endpoint_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;text&quot;</span><span class="p">:</span> <span class="s2">&quot;Welcome to Nexios&quot;</span><span class="p">})</span>
+  <h1>Nexio request</h1>
+
+<h3 id="nexio-request-object">Nexio Request object</h3>
+<p>The Nexios Request is an object that is provided by nexios in the handler arguments . </p>
+<h2 id="route_params">.route_params</h2>
+<p><code>In Nexio, route parameters are dynamic placeholders in the URL path, enclosed in curly braces. They capture specific values from the URL and are passed as function arguments. These parameters allow you to define flexible, resource-based routes that can adapt to different inputs, such as IDs or other identifiers, making your API more versatile and dynamic.</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/posts/</span><span class="si">{post_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">route_params</span><span class="o">.</span><span class="n">post_id</span><span class="p">)</span> <span class="c1">#return the pramater passed as `/post/90`</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">route_params</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
 </code></pre></div>
-<p>Run the application with the command:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>uvicorn<span class="w"> </span>main:app<span class="w"> </span>--reload
-</code></pre></div></p>
-<h3 id="3-routing">3. <strong>Routing</strong></h3>
-<p>Nexios supports routing in both decorator and router styles.</p>
-<h4 id="using-decorators">Using Decorators:</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/api/endpoint&quot;</span><span class="p">,</span> <span class="n">methods</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;GET&quot;</span><span class="p">])</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">endpoint_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
+<h2 id="cookies">.cookies</h2>
+<p><code>Cookies are small pieces of data stored by the browser on a user's device. They are sent between the server and client with each HTTP request, allowing the server to remember user preferences, authentication details, or session information. Cookies can be persistent (remaining for a specified duration) or session-based (deleted when the browser is closed). They are often used for things like keeping users logged in or tracking user behavior across sessions. in nexio thie attr is typically stores as dict and access as same .</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/user-session&quot;</span><span class="p">)</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">cookies</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span> <span class="c1">#return the Value for the key else raise KeyError`</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
 </code></pre></div>
-<h4 id="using-routers">Using Routers:</h4>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span> <span class="nn">nexios</span> <span class="kn">import</span> <span class="n">Router</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="n">r</span> <span class="o">=</span> <span class="n">Router</span><span class="p">(</span><span class="n">prefix</span><span class="o">=</span><span class="s2">&quot;/api&quot;</span><span class="p">)</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">r</span><span class="o">.</span><span class="n">add_route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">,</span> <span class="n">handler</span><span class="o">=</span><span class="n">endpoint_handler</span><span class="p">)</span>
+<h2 id="headers">.headers</h2>
+<p><code>Headers in HTTP are like the notes that come with a package when it's sent. They provide important details about the package (data), such as its type, how it should be handled, or any special instructions, like authentication info.</code></p>
+<p>For example:</p>
+<p><code>Content-Type</code> tells the server what kind of data the client is sending, like saying, "I'm sending a JSON file."</p>
+<p><code>Authorization</code> might be like a key or password, letting the server know who the client is.
+User-Agent identifies which browser or app is making the request.
+Accept tells the server what type of response the client wants, like asking, "Can you send me that in JSON format?"</p>
+<p>Essentially, headers help ensure that the server and client understand each other and can properly exchange information.`</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/headers&quot;</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span> <span class="c1">#return the Value for the key else raise None`</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
 </code></pre></div>
-<p>Routes can be defined with different HTTP methods like <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, etc. The handler functions will respond accordingly based on the request method.</p>
-<h3 id="4-middleware">4. <strong>Middleware</strong></h3>
-<p>Nexios allows you to define middleware that runs before or after a request is processed.</p>
-<p>Example of an authentication middleware:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">class</span> <span class="nc">AuthMiddleware</span><span class="p">(</span><span class="n">BaseMiddleware</span><span class="p">):</span>
-<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">before_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">):</span>
-<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>        <span class="n">token</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Authorization&quot;</span><span class="p">)</span>
-<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>        <span class="k">if</span> <span class="ow">not</span> <span class="n">token</span><span class="p">:</span>
-<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>            <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Unauthorized&quot;</span><span class="p">},</span> <span class="n">status</span><span class="o">=</span><span class="mi">401</span><span class="p">)</span>
-<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>
-<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>        <span class="n">user</span> <span class="o">=</span> <span class="k">await</span> <span class="n">verify_token</span><span class="p">(</span><span class="n">token</span><span class="p">)</span>
-<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>        <span class="n">req</span><span class="o">.</span><span class="n">state</span><span class="o">.</span><span class="n">user</span> <span class="o">=</span> <span class="n">user</span>
-<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>        <span class="k">await</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">before_request</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">res</span><span class="p">)</span>
-</code></pre></div></p>
-<p>This middleware checks for a token in the request header and verifies it before proceeding to the handler.</p>
-<h3 id="5-asynchronous-support">5. <strong>Asynchronous Support</strong></h3>
-<p>Nexios is built on top of ASGI, which means it's fully asynchronous and capable of handling multiple concurrent requests without blocking. This is especially useful for I/O-bound operations such as database queries, file handling, and API calls, allowing for more efficient performance compared to traditional synchronous frameworks.</p>
-<p>By using <code>async</code> and <code>await</code> keywords, you can make non-blocking calls to databases (like Tortoise ORM) and external APIs while handling incoming HTTP requests.</p>
-<h3 id="6-websocket-support">6. <strong>WebSocket Support</strong></h3>
-<p>Nexios comes with built-in WebSocket support, allowing you to handle real-time communication in your application easily. This feature can be useful for building chat applications, live notifications, or other real-time features.</p>
-<h3 id="7-session-management">7. <strong>Session Management</strong></h3>
-<p>Nexios supports both file-based and signed cookie sessions. It also has a built-in session manager that helps with storing and retrieving session data securely. This is useful for maintaining user states, especially in authentication systems.</p>
-<h2 id="conclusion">Conclusion</h2>
-<p>Nexios is a powerful and flexible framework that allows developers to build modern web applications efficiently. It leverages the power of ASGI for asynchronous operations, offers easy-to-use routing and middleware systems, and comes with built-in utilities like WebSocket and session management to help you develop faster and smarter. Whether you prefer Object-Oriented or Functional Programming, Nexios has you covered, making it a versatile choice for backend development.</p>
-<p>For more detailed information, refer to the complete <a href="#">Nexios documentation</a>.</p>
-<hr />
-<p>This markdown provides an introduction to Nexios, covering installation, basic routing, middleware, asynchronous support, and other key features of the framework. Let me know if you want to add more details or need further customization!</p>
+<h2 id="content-type">.content-type</h2>
+<p>Content-Type is an HTTP header that specifies the format of the data being sent, helping the server or client know how to interpret it (e.g., JSON, HTML, or file uploads).</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">content_type</span><span class="p">)</span> <span class="c1"># Returns the MIME type of the request content.</span>
+</code></pre></div>
+<h2 id="client">.client</h2>
+<p>The <code>.client()</code> method returns a tuple with the client's host (IP address or hostname) and port (connection port). It's useful for logging, identifying request origins, or applying specific rules.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">client</span><span class="p">())</span> <span class="c1">#Returns client information as a tuple of (host, port).</span>
+</code></pre></div>
+<h2 id="query_params">.query_params</h2>
+<p><code>The .query_params method extracts query parameters from a URL and returns them as a dictionary.</code></p>
+<p>For example, if the URL is:</p>
+<p><code>/search?category=books&amp;category=electronics&amp;sort=price</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+</code></pre></div>
+<h2 id="base_url">.base_url</h2>
+<p><code>the base URL refers to the root URL for the API, from which all endpoint paths are built. It's the starting point for constructing full URLs in your application.</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">base_url</span><span class="p">)</span> 
+</code></pre></div>
+<h2 id="body">.body()</h2>
+<p><code>This property asynchronously retrieves the raw body content of the request. The body is typically the data sent by the client (e.g., form data, JSON). The body is retrieved in chunks, and the method ensures that all data is read before returning it.</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">()</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+</code></pre></div>
+<h2 id="json">.json()</h2>
+<p><code>This property asynchronously parses the request body as JSON. It tries to decode the body into a Python dictionary. If the body is not valid JSON or cannot be decoded, it returns an empty dictionary. This is useful for APIs that expect JSON input.</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+</code></pre></div>
+<h2 id="form_data">.form_data()</h2>
+<p><code>This property asynchronously parses the request body as form data. It handles both multipart/form-data (used for file uploads) and application/x-www-form-urlencoded (used for standard form submissions). The method ensures that both types are handled properly and returns the parsed form data as a dictionary.</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">form_data</span><span class="p">()</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;text&quot;</span><span class="p">:</span><span class="s2">&quot;success&quot;</span><span class="p">})</span>
+</code></pre></div>
+<h2 id="stream">.stream()</h2>
+<p><code>This method asynchronously yields chunks of the request body. It is useful for handling large requests that are too big to fit into memory at once. This method can be used to stream data from the client in smaller parts, which can be processed incrementally.</code></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="c1"># Start streaming the request body</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">chunked_data</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="k">async</span> <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">stream</span><span class="p">():</span>
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        <span class="c1"># Collecting chunks to simulate processing</span>
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        <span class="n">chunked_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="c1"># Join all the chunks and return a response</span>
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="n">full_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chunked_data</span><span class="p">)</span>
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Data recieve successfully&quot;</span><span class="p">)</span>
+</code></pre></div>
 
 
 
@@ -1755,7 +1729,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 3, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2024</span>
   </span>
 
     
@@ -1826,15 +1800,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="routing.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Routing And handlers">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Routing And handlers
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="introduction.html" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+          <a href="../core-features/request-object.html" class="md-footer__link md-footer__link--next" aria-label="Next: Request Object">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Request Object
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1958,10 +1948,10 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["content.code.copy", "navigation.tabs", "navigation.instant", "navigation.sections", "navigation.instant.progress", "navigation.footer"], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "navigation.tabs", "navigation.instant", "navigation.sections", "navigation.instant.progress", "navigation.footer"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "stable", "provider": "mike"}}</script>
     
     
-      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>

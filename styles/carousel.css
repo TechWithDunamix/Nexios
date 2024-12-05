@@ -1,0 +1,30 @@
+.carousel {
+    position: relative;
+    margin: 2rem 0;
+}
+
+.carousel-item {
+    display: none;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.carousel-buttons button {
+    padding: 0.5rem 1rem;
+    background: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.carousel-buttons button:hover {
+    background: #34495e;
+}
