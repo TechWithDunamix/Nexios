@@ -12,7 +12,7 @@
         <meta name="author" content="Dunamis">
       
       
-        <link rel="canonical" href="https://Nexioss.example.com/guides/nexio-request.html">
+        <link rel="canonical" href="https://Nexioss.example.com/guides/nexio-response.html">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>Nexio Request object - Nexios</title>
+        <title>Nexio Response - Nexios</title>
       
     
     
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nexio-request-object" class="md-skip">
+        <a href="#nexio-response" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nexio Request object
+              Nexio Response
             
           </span>
         </div>
@@ -1078,99 +1078,210 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#route_params" class="md-nav__link">
+  <a href="#core-methods" class="md-nav__link">
     <span class="md-ellipsis">
-      .route_params
+      Core Methods
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#statuscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      .status(code)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sendcontent-status_code200" class="md-nav__link">
+    <span class="md-ellipsis">
+      .send(content, status_code=200)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jsondata-status_code200" class="md-nav__link">
+    <span class="md-ellipsis">
+      .json(data, status_code=200)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#htmlcontent-status_code200" class="md-nav__link">
+    <span class="md-ellipsis">
+      .html(content, status_code=200)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#headerkey-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      .header(key, value)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#file-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      File Handling
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File Handling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filepath-filenamenone-content_disposition_typeattachment" class="md-nav__link">
+    <span class="md-ellipsis">
+      .file(path, filename=None, content_disposition_type="attachment")
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#streamiterator-content_typetextplain" class="md-nav__link">
+    <span class="md-ellipsis">
+      .stream(iterator, content_type="text/plain")
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cookie-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cookie Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cookie Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#set_cookiekey-value-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      .set_cookie(key, value, **options)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delete_cookiekey-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      .delete_cookie(key, **options)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caching-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caching Control
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Caching Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cachemax_age3600-privatetrue" class="md-nav__link">
+    <span class="md-ellipsis">
+      .cache(max_age=3600, private=True)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no_cache" class="md-nav__link">
+    <span class="md-ellipsis">
+      .no_cache()
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redirection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Redirection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Redirection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#redirecturl-status_code302" class="md-nav__link">
+    <span class="md-ellipsis">
+      .redirect(url, status_code=302)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Handling
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cookies" class="md-nav__link">
+  <a href="#performance-considerations" class="md-nav__link">
     <span class="md-ellipsis">
-      .cookies
+      Performance Considerations
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#headers" class="md-nav__link">
+  <a href="#security-best-practices" class="md-nav__link">
     <span class="md-ellipsis">
-      .headers
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#content-type" class="md-nav__link">
-    <span class="md-ellipsis">
-      .content-type
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#client" class="md-nav__link">
-    <span class="md-ellipsis">
-      .client
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#query_params" class="md-nav__link">
-    <span class="md-ellipsis">
-      .query_params
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#base_url" class="md-nav__link">
-    <span class="md-ellipsis">
-      .base_url
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#body" class="md-nav__link">
-    <span class="md-ellipsis">
-      .body()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#json" class="md-nav__link">
-    <span class="md-ellipsis">
-      .json()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#form_data" class="md-nav__link">
-    <span class="md-ellipsis">
-      .form_data()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stream" class="md-nav__link">
-    <span class="md-ellipsis">
-      .stream()
+      Security Best Practices
     </span>
   </a>
   
@@ -1194,105 +1305,153 @@
   
 
 
-<h1 id="nexio-request-object">Nexio Request object</h1>
-<p>The Nexios Request is an object that is provided by nexios in the handler arguments . </p>
-<h2 id="route_params">.route_params</h2>
-<p><code>In Nexio, route parameters are dynamic placeholders in the URL path, enclosed in curly braces. They capture specific values from the URL and are passed as function arguments. These parameters allow you to define flexible, resource-based routes that can adapt to different inputs, such as IDs or other identifiers, making your API more versatile and dynamic.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/posts/</span><span class="si">{post_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+<h1 id="nexio-response">Nexio Response</h1>
+<p><code>NexioResponse</code> is an object that represents the HTTP response sent from the server to the client in the Nexio framework. It allows for setting headers, cookies, status codes, and other response attributes.</p>
+<h2 id="core-methods">Core Methods</h2>
+<h3 id="statuscode">.status(code)</h3>
+<p>Sets the HTTP status code for the response.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/status&quot;</span><span class="p">)</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">route_params</span><span class="o">.</span><span class="n">post_id</span><span class="p">)</span> <span class="c1">#return the pramater passed as `/post/90`</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">route_params</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">201</span><span class="p">)</span>  <span class="c1"># Created</span>
 </code></pre></div>
-<h2 id="cookies">.cookies</h2>
-<p><code>Cookies are small pieces of data stored by the browser on a user's device. They are sent between the server and client with each HTTP request, allowing the server to remember user preferences, authentication details, or session information. Cookies can be persistent (remaining for a specified duration) or session-based (deleted when the browser is closed). They are often used for things like keeping users logged in or tracking user behavior across sessions. in nexio thie attr is typically stores as dict and access as same .</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/user-session&quot;</span><span class="p">)</span>
+<p>Common status codes:
+- <code>200</code>: OK (default)
+- <code>201</code>: Created
+- <code>400</code>: Bad Request
+- <code>404</code>: Not Found
+- <code>500</code>: Internal Server Error</p>
+<h3 id="sendcontent-status_code200">.send(content, status_code=200)</h3>
+<p>Sends a plain text response to the client.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/text&quot;</span><span class="p">)</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">cookies</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span> <span class="c1">#return the Value for the key else raise KeyError`</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Hello world&quot;</span><span class="p">,</span> <span class="n">status_code</span><span class="o">=</span><span class="mi">201</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="headers">.headers</h2>
-<p><code>Headers in HTTP are like the notes that come with a package when it's sent. They provide important details about the package (data), such as its type, how it should be handled, or any special instructions, like authentication info.</code></p>
-<p>For example:</p>
-<p><code>Content-Type</code> tells the server what kind of data the client is sending, like saying, "I'm sending a JSON file."</p>
-<p><code>Authorization</code> might be like a key or password, letting the server know who the client is.
-User-Agent identifies which browser or app is making the request.
-Accept tells the server what type of response the client wants, like asking, "Can you send me that in JSON format?"</p>
-<p>Essentially, headers help ensure that the server and client understand each other and can properly exchange information.`</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/headers&quot;</span><span class="p">)</span>
+<h3 id="jsondata-status_code200">.json(data, status_code=200)</h3>
+<p>Sends a JSON response with automatic serialization.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/json&quot;</span><span class="p">)</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span> <span class="c1">#return the Value for the key else raise None`</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;OK&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>        <span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="s2">&quot;John&quot;</span><span class="p">}</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="p">})</span>
 </code></pre></div>
-<h2 id="content-type">.content-type</h2>
-<p>Content-Type is an HTTP header that specifies the format of the data being sent, helping the server or client know how to interpret it (e.g., JSON, HTML, or file uploads).</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<h3 id="htmlcontent-status_code200">.html(content, status_code=200)</h3>
+<p>Sends an HTML response with proper content-type headers.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/html&quot;</span><span class="p">)</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">content_type</span><span class="p">)</span> <span class="c1"># Returns the MIME type of the request content.</span>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="s2">&quot;&lt;h1&gt;Welcome&lt;/h1&gt;&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="client">.client</h2>
-<p>The <code>.client()</code> method returns a tuple with the client's host (IP address or hostname) and port (connection port). It's useful for logging, identifying request origins, or applying specific rules.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<h3 id="headerkey-value">.header(key, value)</h3>
+<p>Sets a custom HTTP header.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/headers&quot;</span><span class="p">)</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">client</span><span class="p">())</span> <span class="c1">#Returns client information as a tuple of (host, port).</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">header</span><span class="p">(</span><span class="s2">&quot;X-Custom&quot;</span><span class="p">,</span> <span class="s2">&quot;value&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Custom Header Added&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="query_params">.query_params</h2>
-<p><code>The .query_params method extracts query parameters from a URL and returns them as a dictionary.</code></p>
-<p>For example, if the URL is:</p>
-<p><code>/search?category=books&amp;category=electronics&amp;sort=price</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<h2 id="file-handling">File Handling</h2>
+<h3 id="filepath-filenamenone-content_disposition_typeattachment">.file(path, filename=None, content_disposition_type="attachment")</h3>
+<p>Streams a file as response with optional custom filename.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/download&quot;</span><span class="p">)</span>
 <a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">file</span><span class="p">(</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        <span class="n">path</span><span class="o">=</span><span class="s2">&quot;files/document.pdf&quot;</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;report.pdf&quot;</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="p">)</span>
 </code></pre></div>
-<h2 id="base_url">.base_url</h2>
-<p><code>the base URL refers to the root URL for the API, from which all endpoint paths are built. It's the starting point for constructing full URLs in your application.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<h3 id="streamiterator-content_typetextplain">.stream(iterator, content_type="text/plain")</h3>
+<p>Creates a streaming response for large data sets.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/stream&quot;</span><span class="p">)</span>
 <a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">base_url</span><span class="p">)</span> 
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>    <span class="k">def</span> <span class="nf">generate</span><span class="p">():</span>
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>            <span class="k">yield</span> <span class="sa">f</span><span class="s2">&quot;data chunk </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">stream</span><span class="p">(</span><span class="n">generate</span><span class="p">())</span>
 </code></pre></div>
-<h2 id="body">.body()</h2>
-<p><code>This property asynchronously retrieves the raw body content of the request. The body is typically the data sent by the client (e.g., form data, JSON). The body is retrieved in chunks, and the method ensures that all data is read before returning it.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<h2 id="cookie-management">Cookie Management</h2>
+<h3 id="set_cookiekey-value-options">.set_cookie(key, value, **options)</h3>
+<p>Sets a cookie with various optional parameters.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/cookies&quot;</span><span class="p">)</span>
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">()</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">set_cookie</span><span class="p">(</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        <span class="s2">&quot;session&quot;</span><span class="p">,</span> 
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        <span class="s2">&quot;abc123&quot;</span><span class="p">,</span>
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        <span class="n">max_age</span><span class="o">=</span><span class="mi">3600</span><span class="p">,</span>
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        <span class="n">httponly</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        <span class="n">secure</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>        <span class="n">samesite</span><span class="o">=</span><span class="s2">&quot;Strict&quot;</span>
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>    <span class="p">)</span>
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Cookie Set&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="json">.json()</h2>
-<p><code>This property asynchronously parses the request body as JSON. It tries to decode the body into a Python dictionary. If the body is not valid JSON or cannot be decoded, it returns an empty dictionary. This is useful for APIs that expect JSON input.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<p>Cookie options:
+- <code>max_age</code>: Lifetime in seconds
+- <code>expires</code>: Explicit expiration date
+- <code>path</code>: Cookie path (default: "/")
+- <code>domain</code>: Cookie domain
+- <code>secure</code>: HTTPS-only flag
+- <code>httponly</code>: JavaScript access prevention
+- <code>samesite</code>: Cross-site request handling</p>
+<h3 id="delete_cookiekey-options">.delete_cookie(key, **options)</h3>
+<p>Removes a cookie by setting its expiration to the past.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/remove-cookie&quot;</span><span class="p">)</span>
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="n">response</span><span class="o">.</span><span class="n">delete_cookie</span><span class="p">(</span><span class="s2">&quot;session&quot;</span><span class="p">)</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Cookie Removed&quot;</span><span class="p">)</span>
 </code></pre></div>
-<h2 id="form_data">.form_data()</h2>
-<p><code>This property asynchronously parses the request body as form data. It handles both multipart/form-data (used for file uploads) and application/x-www-form-urlencoded (used for standard form submissions). The method ensures that both types are handled properly and returns the parsed form data as a dictionary.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<h2 id="caching-control">Caching Control</h2>
+<h3 id="cachemax_age3600-privatetrue">.cache(max_age=3600, private=True)</h3>
+<p>Enables response caching with specified options.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/cached&quot;</span><span class="p">)</span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">form_data</span><span class="p">()</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;text&quot;</span><span class="p">:</span><span class="s2">&quot;success&quot;</span><span class="p">})</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="n">response</span><span class="o">.</span><span class="n">cache</span><span class="p">(</span>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>        <span class="n">max_age</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span>  <span class="c1"># 60 seconds</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>        <span class="n">private</span><span class="o">=</span><span class="kc">True</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="p">)</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;data&quot;</span><span class="p">:</span> <span class="s2">&quot;cached&quot;</span><span class="p">})</span>
 </code></pre></div>
-<h2 id="stream">.stream()</h2>
-<p><code>This method asynchronously yields chunks of the request body. It is useful for handling large requests that are too big to fit into memory at once. This method can be used to stream data from the client in smaller parts, which can be processed incrementally.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
+<p>Cache properties:
+- <code>max_age</code>: Cache duration in seconds
+- <code>private</code>: Client-only caching
+- <code>public</code>: Shared caching allowed</p>
+<h3 id="no_cache">.no_cache()</h3>
+<p>Disables caching for the response.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/no-cache&quot;</span><span class="p">)</span>
 <a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="c1"># Start streaming the request body</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">chunked_data</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="k">async</span> <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">stream</span><span class="p">():</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        <span class="c1"># Collecting chunks to simulate processing</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        <span class="n">chunked_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="c1"># Join all the chunks and return a response</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="n">full_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chunked_data</span><span class="p">)</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Data recieve successfully&quot;</span><span class="p">)</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">response</span><span class="o">.</span><span class="n">no_cache</span><span class="p">()</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Not cached&quot;</span><span class="p">)</span>
 </code></pre></div>
+<h2 id="redirection">Redirection</h2>
+<h3 id="redirecturl-status_code302">.redirect(url, status_code=302)</h3>
+<p>Performs an HTTP redirect to the specified URL.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/redirect&quot;</span><span class="p">)</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">redirect</span><span class="p">(</span><span class="s2">&quot;/new-location&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="error-handling">Error Handling</h2>
+<p>When sending error responses, it's recommended to include appropriate status codes and messages:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/error&quot;</span><span class="p">)</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span>
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>        <span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Bad Request&quot;</span><span class="p">,</span>
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>        <span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Invalid parameters&quot;</span>
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="p">},</span><span class="n">status_code</span> <span class="o">=</span> <span class="mi">400</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="performance-considerations">Performance Considerations</h2>
+<ol>
+<li>Use streaming responses for large files or data sets</li>
+<li>Enable caching for static or rarely-changing content</li>
+<li>Set appropriate content-type headers</li>
+<li>Use compression when possible</li>
+<li>Include ETags for cache validation</li>
+</ol>
+<h2 id="security-best-practices">Security Best Practices</h2>
+<ol>
+<li>Always set appropriate security headers</li>
+<li>Use secure cookie options for sensitive data</li>
+<li>Validate and sanitize response content</li>
+<li>Implement proper CORS headers when needed</li>
+<li>Use HTTPS-only cookies for sensitive data</li>
+</ol>
+<p>This comprehensive set of features allows you to create secure, efficient, and flexible web applications while maintaining clean and maintainable code through the fluent interface design.</p>
 
 
 

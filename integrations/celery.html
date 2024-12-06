@@ -12,8 +12,10 @@
         <meta name="author" content="Dunamis">
       
       
-        <link rel="canonical" href="https://Nexioss.example.com/guides/nexio-request.html">
+        <link rel="canonical" href="https://Nexioss.example.com/integrations/celery.html">
       
+      
+        <link rel="prev" href="redis.html">
       
       
       
@@ -25,7 +27,7 @@
     
     
       
-        <title>Nexio Request object - Nexios</title>
+        <title>Celery - Nexios</title>
       
     
     
@@ -81,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#nexio-request-object" class="md-skip">
+        <a href="#integrating-celery-with-nexios" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Nexio Request object
+              Celery
             
           </span>
         </div>
@@ -225,7 +227,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="routing.html" class="md-tabs__link">
+        <a href="../guides/routing.html" class="md-tabs__link">
           
   
   Guide
@@ -239,11 +241,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../integrations/tortoise-orm.html" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="tortoise-orm.html" class="md-tabs__link">
           
   
   Integrations
@@ -532,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="routing.html" class="md-nav__link">
+      <a href="../guides/routing.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -553,7 +557,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Nexios-request.md" class="md-nav__link">
+      <a href="../guides/Nexios-request.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -574,7 +578,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Nexios-response.md" class="md-nav__link">
+      <a href="../guides/Nexios-response.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -683,25 +687,30 @@
       
   
   
+    
   
   
+  
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -712,7 +721,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Integrations
@@ -726,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../integrations/tortoise-orm.html" class="md-nav__link">
+      <a href="tortoise-orm.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +756,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../integrations/redis.html" class="md-nav__link">
+      <a href="redis.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -765,10 +774,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../integrations/celery.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Celery
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="celery.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -777,6 +806,107 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-celery-with-nexios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Celery with Nexios?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configure-celery-in-a-nexios-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure Celery in a Nexios Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-celery-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Celery Tasks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hook-celery-into-nexios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hook Celery into Nexios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-celery-worker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Celery Worker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Integration
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-use-cases" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced Use Cases
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-use-celery-with-nexios_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Use Celery with Nexios?
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1078,99 +1208,81 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#route_params" class="md-nav__link">
+  <a href="#why-use-celery-with-nexios" class="md-nav__link">
     <span class="md-ellipsis">
-      .route_params
+      Why Use Celery with Nexios?
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#cookies" class="md-nav__link">
+  <a href="#prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
-      .cookies
+      Prerequisites
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#headers" class="md-nav__link">
+  <a href="#configure-celery-in-a-nexios-project" class="md-nav__link">
     <span class="md-ellipsis">
-      .headers
+      Configure Celery in a Nexios Project
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#content-type" class="md-nav__link">
+  <a href="#create-celery-tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      .content-type
+      Create Celery Tasks
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#client" class="md-nav__link">
+  <a href="#hook-celery-into-nexios" class="md-nav__link">
     <span class="md-ellipsis">
-      .client
+      Hook Celery into Nexios
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#query_params" class="md-nav__link">
+  <a href="#run-the-celery-worker" class="md-nav__link">
     <span class="md-ellipsis">
-      .query_params
+      Run the Celery Worker
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#base_url" class="md-nav__link">
+  <a href="#test-the-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      .base_url
+      Test the Integration
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#body" class="md-nav__link">
+  <a href="#advanced-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      .body()
+      Advanced Use Cases
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#json" class="md-nav__link">
+  <a href="#why-use-celery-with-nexios_1" class="md-nav__link">
     <span class="md-ellipsis">
-      .json()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#form_data" class="md-nav__link">
-    <span class="md-ellipsis">
-      .form_data()
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#stream" class="md-nav__link">
-    <span class="md-ellipsis">
-      .stream()
+      Why Use Celery with Nexios?
     </span>
   </a>
   
@@ -1194,105 +1306,182 @@
   
 
 
-<h1 id="nexio-request-object">Nexio Request object</h1>
-<p>The Nexios Request is an object that is provided by nexios in the handler arguments . </p>
-<h2 id="route_params">.route_params</h2>
-<p><code>In Nexio, route parameters are dynamic placeholders in the URL path, enclosed in curly braces. They capture specific values from the URL and are passed as function arguments. These parameters allow you to define flexible, resource-based routes that can adapt to different inputs, such as IDs or other identifiers, making your API more versatile and dynamic.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/posts/</span><span class="si">{post_id}</span><span class="s2">&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">route_params</span><span class="o">.</span><span class="n">post_id</span><span class="p">)</span> <span class="c1">#return the pramater passed as `/post/90`</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">route_params</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
+<h1 id="integrating-celery-with-nexios">Integrating Celery with Nexios</h1>
+<p><strong>Celery</strong> is a powerful task queue library that supports distributed task execution. When paired with Nexios, Celery can handle background tasks like sending emails, processing uploads, or executing long-running tasks outside the main request-response cycle.</p>
+<p>This guide walks you through integrating <strong>Celery</strong> into a Nexios app.</p>
+<hr />
+<h3 id="why-use-celery-with-nexios">Why Use Celery with Nexios?</h3>
+<ul>
+<li><strong>Asynchronous Background Tasks:</strong> Offload resource-heavy operations to Celery workers.  </li>
+<li><strong>Distributed Execution:</strong> Scale across multiple servers for high-performance workflows.  </li>
+<li><strong>Reliable Task Scheduling:</strong> Use Celery for periodic or scheduled tasks.  </li>
+<li><strong>Resilient Queue Management:</strong> Retry failed tasks, track task states, and monitor execution logs.</li>
+</ul>
+<hr />
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>
+<p><strong>Install Required Packages</strong><br />
+   Install Celery, a message broker (e.g., Redis), and any required backend libraries:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>celery<span class="o">[</span>redis<span class="o">]</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>pip<span class="w"> </span>install<span class="w"> </span>Nexioss
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Set Up a Message Broker</strong><br />
+   Celery requires a message broker like Redis or RabbitMQ. For simplicity, we’ll use Redis.  </p>
+</li>
+<li>
+<p>Install Redis and ensure it’s running:
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>redis
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>redis-server
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="configure-celery-in-a-nexios-project">Configure Celery in a Nexios Project</h3>
+<p>Create a <code>celery_app.py</code> file to define and configure the Celery app:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="c1"># Create a Celery instance</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">celery_app</span> <span class="o">=</span> <span class="n">Celery</span><span class="p">(</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="s2">&quot;Nexios_app&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    <span class="n">broker</span><span class="o">=</span><span class="s2">&quot;redis://localhost:6379/0&quot;</span><span class="p">,</span>  <span class="c1"># Redis as the message broker</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="n">backend</span><span class="o">=</span><span class="s2">&quot;redis://localhost:6379/0&quot;</span>  <span class="c1"># Redis as the result backend</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p">)</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="c1"># Celery Configuration</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="n">celery_app</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>    <span class="n">task_serializer</span><span class="o">=</span><span class="s2">&quot;json&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>    <span class="n">result_serializer</span><span class="o">=</span><span class="s2">&quot;json&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">accept_content</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;json&quot;</span><span class="p">],</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="n">timezone</span><span class="o">=</span><span class="s2">&quot;UTC&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="n">enable_utc</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">)</span>
 </code></pre></div>
-<h2 id="cookies">.cookies</h2>
-<p><code>Cookies are small pieces of data stored by the browser on a user's device. They are sent between the server and client with each HTTP request, allowing the server to remember user preferences, authentication details, or session information. Cookies can be persistent (remaining for a specified duration) or session-based (deleted when the browser is closed). They are often used for things like keeping users logged in or tracking user behavior across sessions. in nexio thie attr is typically stores as dict and access as same .</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/user-session&quot;</span><span class="p">)</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">cookies</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span> <span class="c1">#return the Value for the key else raise KeyError`</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">cookies</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
+<hr />
+<h3 id="create-celery-tasks">Create Celery Tasks</h3>
+<p>Define tasks in a <code>tasks.py</code> file. Here’s an example of sending a welcome email asynchronously:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span> <span class="nn">celery_app</span> <span class="kn">import</span> <span class="n">celery_app</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nd">@celery_app</span><span class="o">.</span><span class="n">task</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">def</span> <span class="nf">send_welcome_email</span><span class="p">(</span><span class="n">user_email</span><span class="p">):</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="sd">    Simulates sending a welcome email to the user.</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="c1"># Simulate a delay for the task</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="kn">import</span> <span class="nn">time</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Welcome email sent to </span><span class="si">{</span><span class="n">user_email</span><span class="si">}</span><span class="s2">&quot;</span>
 </code></pre></div>
-<h2 id="headers">.headers</h2>
-<p><code>Headers in HTTP are like the notes that come with a package when it's sent. They provide important details about the package (data), such as its type, how it should be handled, or any special instructions, like authentication info.</code></p>
-<p>For example:</p>
-<p><code>Content-Type</code> tells the server what kind of data the client is sending, like saying, "I'm sending a JSON file."</p>
-<p><code>Authorization</code> might be like a key or password, letting the server know who the client is.
-User-Agent identifies which browser or app is making the request.
-Accept tells the server what type of response the client wants, like asking, "Can you send me that in JSON format?"</p>
-<p>Essentially, headers help ensure that the server and client understand each other and can properly exchange information.`</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/headers&quot;</span><span class="p">)</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
-<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="p">[</span><span class="s1">&#39;key&#39;</span><span class="p">])</span> <span class="c1">#return the Value for the key else raise None`</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">items</span><span class="p">())</span> <span class="c1">#return a key value tuple in a list [(key,value),(key,value)]</span>
-</code></pre></div>
-<h2 id="content-type">.content-type</h2>
-<p>Content-Type is an HTTP header that specifies the format of the data being sent, helping the server or client know how to interpret it (e.g., JSON, HTML, or file uploads).</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">content_type</span><span class="p">)</span> <span class="c1"># Returns the MIME type of the request content.</span>
-</code></pre></div>
-<h2 id="client">.client</h2>
-<p>The <code>.client()</code> method returns a tuple with the client's host (IP address or hostname) and port (connection port). It's useful for logging, identifying request origins, or applying specific rules.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<hr />
+<h3 id="hook-celery-into-nexios">Hook Celery into Nexios</h3>
+<p>Update your Nexios app to trigger Celery tasks.  </p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span> <span class="nn">Nexioss</span> <span class="kn">import</span> <span class="n">get_application</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="kn">from</span> <span class="nn">tasks</span> <span class="kn">import</span> <span class="n">send_welcome_email</span>
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">client</span><span class="p">())</span> <span class="c1">#Returns client information as a tuple of (host, port).</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">app</span> <span class="o">=</span> <span class="n">get_application</span><span class="p">()</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nd">@app</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;/send-email&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">trigger_email</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="sd">    API endpoint to trigger a Celery task for sending an email.</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>    <span class="n">email</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a>    <span class="k">if</span> <span class="ow">not</span> <span class="n">email</span><span class="p">:</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a>        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="s2">&quot;Email is required&quot;</span><span class="p">},</span> <span class="n">status</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a>    <span class="c1"># Call the Celery task</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>    <span class="n">task</span> <span class="o">=</span> <span class="n">send_welcome_email</span><span class="o">.</span><span class="n">delay</span><span class="p">(</span><span class="n">email</span><span class="p">)</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;message&quot;</span><span class="p">:</span> <span class="s2">&quot;Email task created&quot;</span><span class="p">,</span> <span class="s2">&quot;task_id&quot;</span><span class="p">:</span> <span class="n">task</span><span class="o">.</span><span class="n">id</span><span class="p">},</span> <span class="n">status</span><span class="o">=</span><span class="mi">202</span><span class="p">)</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="nd">@app</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;/task-status/</span><span class="si">{task_id}</span><span class="s2">&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">get_task_status</span><span class="p">(</span><span class="n">task_id</span><span class="p">:</span> <span class="nb">str</span><span class="p">):</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="sd">    Check the status of a Celery task.</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a>    <span class="kn">from</span> <span class="nn">celery_app</span> <span class="kn">import</span> <span class="n">celery_app</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a>    <span class="n">task</span> <span class="o">=</span> <span class="n">celery_app</span><span class="o">.</span><span class="n">AsyncResult</span><span class="p">(</span><span class="n">task_id</span><span class="p">)</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a>        <span class="s2">&quot;task_id&quot;</span><span class="p">:</span> <span class="n">task</span><span class="o">.</span><span class="n">id</span><span class="p">,</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a>        <span class="s2">&quot;status&quot;</span><span class="p">:</span> <span class="n">task</span><span class="o">.</span><span class="n">status</span><span class="p">,</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a>        <span class="s2">&quot;result&quot;</span><span class="p">:</span> <span class="n">task</span><span class="o">.</span><span class="n">result</span> <span class="k">if</span> <span class="n">task</span><span class="o">.</span><span class="n">ready</span><span class="p">()</span> <span class="k">else</span> <span class="s2">&quot;Pending&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a>    <span class="p">})</span>
 </code></pre></div>
-<h2 id="query_params">.query_params</h2>
-<p><code>The .query_params method extracts query parameters from a URL and returns them as a dictionary.</code></p>
-<p>For example, if the URL is:</p>
-<p><code>/search?category=books&amp;category=electronics&amp;sort=price</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
+<hr />
+<h3 id="run-the-celery-worker">Run the Celery Worker</h3>
+<p>Start the Celery worker to process tasks:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>celery<span class="w"> </span>-A<span class="w"> </span>celery_app<span class="w"> </span>worker<span class="w"> </span>--loglevel<span class="o">=</span>info
 </code></pre></div>
-<h2 id="base_url">.base_url</h2>
-<p><code>the base URL refers to the root URL for the API, from which all endpoint paths are built. It's the starting point for constructing full URLs in your application.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
-<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">base_url</span><span class="p">)</span> 
-</code></pre></div>
-<h2 id="body">.body()</h2>
-<p><code>This property asynchronously retrieves the raw body content of the request. The body is typically the data sent by the client (e.g., form data, JSON). The body is retrieved in chunks, and the method ensures that all data is read before returning it.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">body</span><span class="p">()</span>
-<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
-</code></pre></div>
-<h2 id="json">.json()</h2>
-<p><code>This property asynchronously parses the request body as JSON. It tries to decode the body into a Python dictionary. If the body is not valid JSON or cannot be decoded, it returns an empty dictionary. This is useful for APIs that expect JSON input.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
-<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  <span class="nb">print</span><span class="p">(</span><span class="n">request</span><span class="o">.</span><span class="n">query_params</span><span class="p">())</span> <span class="c1">#The method would return: {&#39;category&#39;: [&#39;books&#39;, &#39;electronics&#39;], &#39;sort&#39;: &#39;price&#39;}</span>
-</code></pre></div>
-<h2 id="form_data">.form_data()</h2>
-<p><code>This property asynchronously parses the request body as form data. It handles both multipart/form-data (used for file uploads) and application/x-www-form-urlencoded (used for standard form submissions). The method ensures that both types are handled properly and returns the parsed form data as a dictionary.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  <span class="n">body</span> <span class="o">=</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">form_data</span><span class="p">()</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">({</span><span class="s2">&quot;text&quot;</span><span class="p">:</span><span class="s2">&quot;success&quot;</span><span class="p">})</span>
-</code></pre></div>
-<h2 id="stream">.stream()</h2>
-<p><code>This method asynchronously yields chunks of the request body. It is useful for handling large requests that are too big to fit into memory at once. This method can be used to stream data from the client in smaller parts, which can be processed incrementally.</code></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nd">@app</span><span class="o">.</span><span class="n">route</span><span class="p">(</span><span class="s2">&quot;/endpoint&quot;</span><span class="p">)</span>
-<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">route_handler</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>
-<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="c1"># Start streaming the request body</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">chunked_data</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
-<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="k">async</span> <span class="k">for</span> <span class="n">chunk</span> <span class="ow">in</span> <span class="k">await</span> <span class="n">request</span><span class="o">.</span><span class="n">stream</span><span class="p">():</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        <span class="c1"># Collecting chunks to simulate processing</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        <span class="n">chunked_data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">chunk</span><span class="o">.</span><span class="n">decode</span><span class="p">())</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
-<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>    <span class="c1"># Join all the chunks and return a response</span>
-<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>    <span class="n">full_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">chunked_data</span><span class="p">)</span>
-<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>    <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s2">&quot;Data recieve successfully&quot;</span><span class="p">)</span>
-</code></pre></div>
+<p>You should see logs indicating that the worker is ready to accept tasks.</p>
+<hr />
+<h3 id="test-the-integration">Test the Integration</h3>
+<ol>
+<li>
+<p><strong>Trigger a Task</strong><br />
+   Make a POST request to the <code>/send-email</code> endpoint:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://127.0.0.1:8000/send-email<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;email&quot;: &quot;test@example.com&quot;}&#39;</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Check Task Status</strong><br />
+   Use the task ID returned by the above endpoint to query the task’s status:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>http://127.0.0.1:8000/task-status/&lt;task_id&gt;
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="advanced-use-cases">Advanced Use Cases</h3>
+<ol>
+<li><strong>Periodic Tasks with Celery Beat</strong><br />
+   Install <code>celery[redis]</code> and <code>celery-beat</code> to schedule periodic tasks:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>celery-beat
+</code></pre></div></li>
+</ol>
+<p>Example periodic task configuration:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span> <span class="nn">celery</span> <span class="kn">import</span> <span class="n">Celery</span>
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">from</span> <span class="nn">celery.schedules</span> <span class="kn">import</span> <span class="n">crontab</span>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="n">celery_app</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">beat_schedule</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>    <span class="s2">&quot;send-daily-summary&quot;</span><span class="p">:</span> <span class="p">{</span>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>        <span class="s2">&quot;task&quot;</span><span class="p">:</span> <span class="s2">&quot;tasks.send_summary_email&quot;</span><span class="p">,</span>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>        <span class="s2">&quot;schedule&quot;</span><span class="p">:</span> <span class="n">crontab</span><span class="p">(</span><span class="n">hour</span><span class="o">=</span><span class="mi">9</span><span class="p">,</span> <span class="n">minute</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span>
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>        <span class="s2">&quot;args&quot;</span><span class="p">:</span> <span class="p">(</span><span class="s2">&quot;daily@example.com&quot;</span><span class="p">,),</span>
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>    <span class="p">},</span>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a><span class="p">}</span>
+</code></pre></div></p>
+<ol>
+<li>
+<p><strong>Task Retries</strong><br />
+   Add retry logic to handle transient errors:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nd">@celery_app</span><span class="o">.</span><span class="n">task</span><span class="p">(</span><span class="n">bind</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">max_retries</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">def</span> <span class="nf">unreliable_task</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="k">try</span><span class="p">:</span>
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>        <span class="c1"># Simulate a flaky operation</span>
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>        <span class="n">risky_operation</span><span class="p">()</span>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">exc</span><span class="p">:</span>
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>        <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">retry</span><span class="p">(</span><span class="n">exc</span><span class="o">=</span><span class="n">exc</span><span class="p">,</span> <span class="n">countdown</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Monitoring Tasks</strong><br />
+   Use tools like <strong>Flower</strong> to monitor and manage Celery tasks:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>pip<span class="w"> </span>install<span class="w"> </span>flower
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>celery<span class="w"> </span>-A<span class="w"> </span>celery_app<span class="w"> </span>flower
+</code></pre></div></p>
+</li>
+</ol>
+<hr />
+<h3 id="why-use-celery-with-nexios_1">Why Use Celery with Nexios?</h3>
+<ul>
+<li><strong>Decoupled Architecture:</strong> Keep Nexios’s request-response cycle lean by offloading heavy tasks to Celery workers.  </li>
+<li><strong>Efficient Task Management:</strong> Handle retries, scheduling, and distributed processing out of the box.  </li>
+<li><strong>Scalability:</strong> Easily add more workers as your task queue grows.  </li>
+</ul>
+<p>For further details, refer to the <a href="https://docs.celeryproject.org">Celery Documentation</a>.</p>
 
 
 
@@ -1380,6 +1569,28 @@ Accept tells the server what type of response the client wants, like asking, "Ca
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="redis.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Redis">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Redis
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">

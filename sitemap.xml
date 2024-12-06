@@ -1,47 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://nexios.example.com/index.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/index.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/author.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/author.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/basic_routing.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/basic_routing.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/hello_world.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/hello_world.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/installation.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/installation.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/introduction.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/introduction.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/setup.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/middlewares.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/blog/index.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/sessions.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/core-features/request-object.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/setup.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/guides/nexio-request.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/validators.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
     <url>
-         <loc>https://nexios.example.com/guides/routing.html</loc>
-         <lastmod>2024-12-05</lastmod>
+         <loc>https://Nexioss.example.com/websocket.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/blog/index.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/core-features/request-object.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/guides/nexio-request.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/guides/nexio-response.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/guides/routing.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/integrations/celery.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/integrations/redis.html</loc>
+         <lastmod>2024-12-06</lastmod>
+    </url>
+    <url>
+         <loc>https://Nexioss.example.com/integrations/tortoise-orm.html</loc>
+         <lastmod>2024-12-06</lastmod>
     </url>
 </urlset>
